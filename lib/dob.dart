@@ -18,14 +18,14 @@ return Scaffold(
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Transform.translate(
-                offset: Offset(0, 10),
+                offset: const Offset(0, 10),
                 child:Image.asset('assets/vvv.png')
               ),
               label: '',
             ),
             BottomNavigationBarItem(
               icon: Transform.translate(
-                offset: Offset(0, -20),
+                offset: const Offset(0, -20),
                 child: Container(
                   decoration: BoxDecoration(
                       border: Border.all(
@@ -44,14 +44,14 @@ return Scaffold(
                             backgroundColor: Colors.white,
                             child: Transform.translate(
 
-                              offset: Offset(0, 0),
+                              offset: const Offset(0, 0),
                               child: InkWell(onTap: (){
 
                               },
                                 child: InkWell(onTap:() {
 
                                 },
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.add,
                                     color: Colors.black,
                                     size: 25,
@@ -68,7 +68,7 @@ return Scaffold(
             ),
             BottomNavigationBarItem(
               icon: Transform.translate(
-                  offset: Offset(0, 10),
+                  offset: const Offset(0, 10),
                   child: Image.asset('assets/Iconly-Bold-Setting.png')),
               label: '',
             ),
@@ -79,7 +79,7 @@ return Scaffold(
           children: [
             Container(
               height: MediaQuery.of(context).size.height / 4,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage(''),
                   ),
@@ -91,7 +91,7 @@ return Scaffold(
                   Container(
                     height: 30,
                     width: 140,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
                             bottomRight: Radius.circular(30),
@@ -100,8 +100,8 @@ return Scaffold(
                             bottomLeft: Radius.circular(0))),
                   ),
                   Transform.translate(
-                    offset: Offset(-130, 0),
-                    child: SizedBox(
+                    offset: const Offset(-130, 0),
+                    child: const SizedBox(
                         height: 30,
                         width: 30,
                         child: CircleAvatar(
@@ -110,26 +110,26 @@ return Scaffold(
                         )),
                   ),
                   Transform.translate(
-                    offset: Offset(-115, 0),
+                    offset: const Offset(-115, 0),
                     child: InkWell(
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => scenesketch()),
+                          MaterialPageRoute(builder: (context) => const scenesketch()),
                         );
                       },
-                      child: Text(
+                      child: const Text(
                         'Court date',
                       ),
                     ),
                   ),
                   Transform.translate(
-                      offset: Offset(10, 10),
+                      offset: const Offset(10, 10),
                       child: Image.asset('assets/court.png'))
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Column(
@@ -139,15 +139,15 @@ return Scaffold(
                   padding: const EdgeInsets.only(left: 24, right: 24),
                   child: TextField(
                     decoration: InputDecoration(label: Row(children: [
-                      Text('Date:'),
-                      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+                      const Text('Date:'),
+                      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
                     ]),
 
 
-                        border: UnderlineInputBorder()),
+                        border: const UnderlineInputBorder()),
                   ),
                 ),
-    SizedBox(
+    const SizedBox(
     height: 10,
     ),
     Column(
@@ -156,15 +156,15 @@ return Scaffold(
     padding: const EdgeInsets.only(left: 24, right: 24),
     child: TextField(
     decoration: InputDecoration(label: Row(children: [
-      Text('Case:'),
-      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+      const Text('Case:'),
+      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
     ]),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
-    SizedBox(
+    const SizedBox(
     height: 10,
     ),
     Column(
@@ -173,15 +173,15 @@ return Scaffold(
     padding: const EdgeInsets.only(left: 24, right: 24),
     child: TextField(
     decoration: InputDecoration(label: Row(children: [
-      Text('Scene:'),
-      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+      const Text('Scene:'),
+      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
     ]),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
-    SizedBox(
+    const SizedBox(
     height: 10,
     ),
     Column(
@@ -190,15 +190,15 @@ return Scaffold(
     padding: const EdgeInsets.only(left: 24, right: 24),
     child: TextField(
     decoration: InputDecoration(label: Row(children: [
-      Text('Offense'),
-      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+      const Text('Offense'),
+      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
     ]),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
-    SizedBox(
+    const SizedBox(
     height: 10,
     ),
     Column(
@@ -207,15 +207,15 @@ return Scaffold(
     padding: const EdgeInsets.only(left: 24, right: 24),
     child: TextField(
     decoration: InputDecoration(label: Row(children: [
-      Text('Address:'),
-      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+      const Text('Address:'),
+      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
     ]),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
-    SizedBox(
+    const SizedBox(
     height: 10,
     ),
     Column(
@@ -224,15 +224,15 @@ return Scaffold(
     padding: const EdgeInsets.only(left: 24, right: 24),
     child: TextField(
     decoration: InputDecoration(label: Row(children: [
-      Text('CSI and ID#:'),
-      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+      const Text('CSI and ID#:'),
+      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
     ]),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
-    SizedBox(
+    const SizedBox(
     height: 10,
     ),
     Column(
@@ -241,15 +241,15 @@ return Scaffold(
     padding: const EdgeInsets.only(left: 24, right: 24),
     child: TextField(
     decoration: InputDecoration(label: Row(children: [
-      Text('Time of Arrival:'),
-      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+      const Text('Time of Arrival:'),
+      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
     ]),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
-      SizedBox(
+      const SizedBox(
         height: 10,
       ),
       Column(
@@ -258,15 +258,15 @@ return Scaffold(
             padding: const EdgeInsets.only(left: 24, right: 24),
             child: TextField(
               decoration: InputDecoration(label: Row(children: [
-                Text('Time I Cleared the Call:'),
-                Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+                const Text('Time I Cleared the Call:'),
+                const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
               ]),
 
 
-                  border: UnderlineInputBorder()),
+                  border: const UnderlineInputBorder()),
             ),
           ),
-          SizedBox(
+          const SizedBox(
           height: 10,
           ),
     Column(
@@ -275,15 +275,15 @@ return Scaffold(
     padding: const EdgeInsets.only(left: 24, right: 24),
     child: TextField(
     decoration: InputDecoration(label: Row(children: [
-      Text('Time Call was Received:'),
-      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+      const Text('Time Call was Received:'),
+      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
     ]),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
-    SizedBox(
+    const SizedBox(
     height: 10,
     ),
     Column(
@@ -292,15 +292,15 @@ return Scaffold(
     padding: const EdgeInsets.only(left: 24, right: 24),
     child: TextField(
     decoration: InputDecoration(label: Row(children: [
-      Text('Primary Detective and ID#:'),
-      Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+      const Text('Primary Detective and ID#:'),
+      const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
     ]),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
-    SizedBox(
+    const SizedBox(
     height: 10,
     ),
     Column(
@@ -310,13 +310,13 @@ return Scaffold(
     child: TextField(
     decoration: InputDecoration(label: SingleChildScrollView(scrollDirection: Axis.horizontal,
       child: Row(children: [
-        Text('Primary Officer/Deputy and ID#:'),
-        Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
+        const Text('Primary Officer/Deputy and ID#:'),
+        const Text('Lorem Ipsum',style: TextStyle(color: Color(0xffD4D4D4))),
       ]),
     ),
 
 
-    border: UnderlineInputBorder()),
+    border: const UnderlineInputBorder()),
     ),
     ),
 
@@ -344,11 +344,11 @@ return Scaffold(
               
     ]
     ),
-      SizedBox(height: 60,),
+      const SizedBox(height: 60,),
         Column(
             children: [
               Transform.translate(
-                offset: Offset(0, -40),
+                offset: const Offset(0, -40),
                 child: DataTable(
                   columns: [
                     DataColumn(
@@ -357,7 +357,7 @@ return Scaffold(
                             Container(
                               height: 100,
                               width: MediaQuery.of(context).size.width / 2.5,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Color(0xff86898E),
                                 borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(0),
@@ -365,7 +365,7 @@ return Scaffold(
                                     bottomRight: Radius.circular(0),
                                     topLeft: Radius.circular(25)),
                               ),
-                              child: Center(
+                              child: const Center(
                                   child: Text(
                                     'Vivtim(s):',
                                     style: TextStyle(color: Colors.white),
@@ -374,7 +374,7 @@ return Scaffold(
                             Container(
                               height: 100,
                               width: MediaQuery.of(context).size.width / 2.1,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Color(0xff86898E),
                                 borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(25),
@@ -382,7 +382,7 @@ return Scaffold(
                                     bottomRight: Radius.circular(0),
                                     topLeft: Radius.circular(0)),
                               ),
-                              child: Center(
+                              child: const Center(
                                   child: Text(
                                     'DOB',
                                     style: TextStyle(color: Colors.white),
@@ -401,7 +401,7 @@ return Scaffold(
                           children: <Widget>[
                             Container(
                               width: MediaQuery.of(context).size.width / 2.5,
-                              child: TextField(
+                              child: const TextField(
                                 decoration: InputDecoration(
                                   isDense: true,
                                   focusedBorder: OutlineInputBorder(
@@ -419,7 +419,7 @@ return Scaffold(
                             ),
                             Container(
                               width: MediaQuery.of(context).size.width / 2.1,
-                              child: TextField(
+                              child: const TextField(
                                 decoration: InputDecoration(
                                   isDense: true,
                                   focusedBorder: OutlineInputBorder(
@@ -447,11 +447,11 @@ return Scaffold(
               ),
 
              
-              SizedBox(height: 60,),
+              const SizedBox(height: 60,),
               Column(
                   children: [
                     Transform.translate(
-                      offset: Offset(0, -40),
+                      offset: const Offset(0, -40),
                       child: DataTable(
                         columns: [
                           DataColumn(
@@ -460,7 +460,7 @@ return Scaffold(
                                   Container(
                                     height: 100,
                                     width: MediaQuery.of(context).size.width / 2.5,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xff86898E),
                                       borderRadius: BorderRadius.only(
                                           topRight: Radius.circular(0),
@@ -468,7 +468,7 @@ return Scaffold(
                                           bottomRight: Radius.circular(0),
                                           topLeft: Radius.circular(25)),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                         child: Text(
                                           'Suspect(s):',
                                           style: TextStyle(color: Colors.white),
@@ -477,7 +477,7 @@ return Scaffold(
                                   Container(
                                     height: 100,
                                     width: MediaQuery.of(context).size.width / 2.1,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xff86898E),
                                       borderRadius: BorderRadius.only(
                                           topRight: Radius.circular(25),
@@ -485,7 +485,7 @@ return Scaffold(
                                           bottomRight: Radius.circular(0),
                                           topLeft: Radius.circular(0)),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                         child: Text(
                                           'DOB',
                                           style: TextStyle(color: Colors.white),
@@ -496,6 +496,7 @@ return Scaffold(
                               ))
                         ],
                         rows: List<DataRow>.generate(
+
                           textValues.length,
                           // Generate rows based on the number of text fields
                               (index) => DataRow(
@@ -504,7 +505,7 @@ return Scaffold(
                                 children: <Widget>[
                                   Container(
                                     width: MediaQuery.of(context).size.width / 2.5,
-                                    child: TextField(
+                                    child: const TextField(
                                       decoration: InputDecoration(
                                         isDense: true,
                                         focusedBorder: OutlineInputBorder(
@@ -522,7 +523,7 @@ return Scaffold(
                                   ),
                                   Container(
                                     width: MediaQuery.of(context).size.width / 2.1,
-                                    child: TextField(
+                                    child: const TextField(
                                       decoration: InputDecoration(
                                         isDense: true,
                                         focusedBorder: OutlineInputBorder(
@@ -552,7 +553,7 @@ return Scaffold(
                     SizedBox(
                       height: 30,
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             boxShadow: [
                               BoxShadow(blurRadius: 3.5, color: Colors.grey)
                             ],
@@ -567,7 +568,7 @@ return Scaffold(
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.black,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                       borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(20),
                                           topLeft: Radius.circular(20),
@@ -576,18 +577,18 @@ return Scaffold(
                               onPressed: () {
 
                               },
-                              child: Text(
+                              child: const Text(
                                 'Save',
                                 style: TextStyle(color: Colors.white),
                               )),
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    const SizedBox(height: 20,),
                     SizedBox(
                       height: 30,
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             boxShadow: [
                               BoxShadow(blurRadius: 3.5, color: Colors.grey)
                             ],
@@ -602,7 +603,7 @@ return Scaffold(
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.white,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                       borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(20),
                                           topLeft: Radius.circular(20),
@@ -614,14 +615,14 @@ return Scaffold(
                                       .add(''); // Add an empty value to the list
                                 });
                               },
-                              child: Text(
+                              child: const Text(
                                 'Add',
                                 style: TextStyle(color: Colors.black),
                               )),
                         ),
                       ),
                     ),
-                    SizedBox(height: 40,)
+                    const SizedBox(height: 40,)
 
         ]
     )
